@@ -1,0 +1,105 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Button styling */
+.stButton>button {
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* Card hover effects */
+div[data-testid="stVerticalBlock"]>div>div>div>div {
+    transition: all 0.3s ease;
+}
+
+div[data-testid="stVerticalBlock"]>div>div>div>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+/* Toggle label color (light mode) */
+[data-testid="stToggle"] label {
+    color: #222 !important;
+    font-weight: 600;
+}
+
+/* Toggle label color (dark mode) */
+.dark [data-testid="stToggle"] label {
+    color: #fafafa !important;
+}
+
+/* Toggle background and border (light mode) */
+[data-testid="stToggle"] > div {
+    background-color: #f0f2f6 !important;
+    border: 2px solid #333 !important;
+}
+
+/* Toggle background and border (dark mode) */
+.dark [data-testid="stToggle"] > div {
+    background-color: #2a2a2a !important;
+    border: 2px solid #e0e0e0 !important;
+}
+
+/* Toggle knob (circle) color (light mode) */
+[data-testid="stToggle"] svg {
+    color: #222 !important;
+    fill: #222 !important;
+}
+
+/* Toggle knob (circle) color (dark mode) */
+.dark [data-testid="stToggle"] svg {
+    color: #fafafa !important;
+    fill: #fafafa !important;
+}
+
+/* Checked state background (light mode) */
+[data-testid="stToggle"] input:checked + div {
+    background-color: #333 !important;
+    border-color: #333 !important;
+}
+
+/* Checked state background (dark mode) */
+.dark [data-testid="stToggle"] input:checked + div {
+    background-color: #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+}
+.black-toggle-box [data-testid="stToggle"] label {
+    color: #fff !important;
+}
+[data-testid="stSidebar"] .stToggle label {
+    color: #fff !important;
+}
